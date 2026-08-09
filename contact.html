@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Lytbits Pte. Ltd.</title>
+  <meta name="description" content="Get in touch with Lytbits Pte. Ltd. for corporate finance, restructuring, or valuation advisory." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="brand"><span class="brand-mark">L</span> Lytbits</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+        <h1>Contact Us</h1>
+        <p>Tell us about your situation, and a member of our team will be in touch.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <div id="form-success" class="form-success">Thank you — your message has been received. We'll be in touch shortly.</div>
+          <!-- This form is a front-end placeholder only. Connect it to a form
+               backend (e.g. Formspree, Netlify Forms) or your own endpoint
+               before going live — it does not currently send anywhere. -->
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="topic">Area of Interest</label>
+              <select id="topic" name="topic">
+                <option value="corporate-finance">Corporate Finance Advisory</option>
+                <option value="restructuring">Financial Restructuring</option>
+                <option value="valuation">Valuation &amp; Transaction Advisory</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note">This form is not yet connected to a live inbox. Add a form backend (e.g. Formspree) before launch.</p>
+          </form>
+        </div>
+
+        <div>
+          <div class="contact-info-item">
+            <span class="label">Registered Office</span>
+            <p>9 Raffles Place<br />#06-01, Republic Plaza<br />Singapore 048619</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Email</span>
+            <p><!-- Add company contact email here --> To be added</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Phone</span>
+            <p><!-- Add company contact phone here --> To be added</p>
+          </div>
+          <div class="contact-info-item">
+            <span class="label">Company Registration</span>
+            <p>UEN 202223170E<br />Lytbits Pte. Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand"><span class="brand-mark">L</span> Lytbits</div>
+          <p>Independent advisory across corporate finance, restructuring, and valuation — built for decisions that matter.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#corporate-finance">Corporate Finance Advisory</a></li>
+            <li><a href="services.html#restructuring">Financial Restructuring</a></li>
+            <li><a href="services.html#valuation">Valuation &amp; Transaction Advisory</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Registered Office</h4>
+          <ul>
+            <li>9 Raffles Place<br />#06-01, Republic Plaza<br />Singapore 048619</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Lytbits Pte. Ltd. All rights reserved.</span>
+        <span>UEN 202223170E</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
