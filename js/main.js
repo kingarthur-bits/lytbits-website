@@ -24,19 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Contact form (static demo — replace action with a real form handler, e.g. Formspree)
-  var contactForm = document.getElementById("contact-form");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var success = document.getElementById("form-success");
-      if (success) {
-        success.style.display = "block";
-      }
-      contactForm.reset();
-    });
-  }
-
   // Set current year in footer
   var yearEl = document.getElementById("current-year");
   if (yearEl) {
