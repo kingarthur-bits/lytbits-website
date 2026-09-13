@@ -29,4 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // Build the contact email at runtime rather than embedding it in the
+  // page source. This does nothing against a targeted attacker, but it
+  // stops the address from being picked up by simple scrapers that only
+  // read raw HTML/JS text looking for an "@" pattern.
+  var emailUser = "info";
+  var emailDomain = "lytbits.sg";
+  var emailAddress = emailUser + "@" + emailDomain;
+
+  var emailCta = document.getElementById("email-cta");
+  if (emailCta) {
+    emailCta.href = "mailto:" + emailAddress + "?subject=" + encodeURIComponent("Advisory Inquiry");
+    emailCta.textContent = "Email " + emailAddress;
+  }
 });
